@@ -1,11 +1,16 @@
 ---
 layout: page
-title: About
+title: Read my blogs to learn a about computational chemistry, science code engineering, and personal finance 
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+On these pages, I will provide background on my GitHub repositories. They are 
+an eclectic bunch. For example:
+* **ExotiMO**: simple code written in [Chapel](http://chapel.cray.com) to model 
+chemical systems containing exotic particles (e.g. positrons) using 
+Hartree-Fock (HF) and post-HF methods
+* seamless: requirements, documentation, source code, and a test suite 
+are all contained in your LaTeX document; encourages good software engineering 
+practices, including a test-driven development approach
+* screens: collection of stock screens written in Mathematica using Yahoo 
+finance data and output to PDF using LaTeX
