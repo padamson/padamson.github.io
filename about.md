@@ -7,7 +7,7 @@ permalink: /about/
 On these pages, I will provide background on my GitHub repositories. They are 
 an eclectic bunch. For example:
 
-- **[ExotiMO][https://github.com/padamson/exotimo]**: simple code written in [Chapel](http://chapel.cray.com) to model 
+- **[ExotiMO](https://github.com/padamson/exotimo)**: simple code written in [Chapel](http://chapel.cray.com) to model 
 chemical systems containing exotic particles (e.g. positrons) using 
 Hartree-Fock (HF) and post-HF methods
 - **[seamless](https://github.com/padamson/seamless)**: requirements, documentation, source code, and a test suite 
