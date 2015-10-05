@@ -14,13 +14,10 @@ meets some fairly unique requirements:
 
 The project stalled out when I wanted to diagonalize
 a Hamiltonian, and I foolishly attempted to rewrite portions of BLAS and LAPACK 
-in the Chapel language.
-
-Well, just this week, I took straight to Twitter when I learned that the [Chapel](chapel) team 
+in the Chapel language. So, when the [Chapel](chapel) team 
 released version 1.12.0 with 
-[some exciting additions](chapel-changes), including a LAPACK module:
-
-{% twitter oembed https://twitter.com/PaulEAdamson/status/649752380838420481 %}
+[some exciting additions](chapel-changes), including a LAPACK module, I was anxious to
+try it out.
 
 [chapel]:         http://chapel.cray.com
 [chapel-overview]:http://chapel.cray.com/overview.html
