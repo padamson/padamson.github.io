@@ -1,9 +1,9 @@
 # Site settings
-title: truth tunnel
+title: science tunnel
 email: paul.adamson.01@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Tunneling to the truth of modeling systems of exotic particles, science code
-  engineering, systems engineering, digitial photography, personal finance, and
+  Tunneling to an understanding of modeling systems of exotic particles, science code
+  engineering, systems engineering, digital photography, personal finance, and
   raising little hackers.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://padamson.github.io" # the base hostname & protocol for your site
