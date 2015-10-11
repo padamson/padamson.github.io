@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Learn about computational chemistry, software engineering, and personal finance 
+title: About
 permalink: /about/
 ---
+# Learn about computational chemistry, software engineering, and personal finance 
 
 On these pages, I will provide background on my GitHub repositories. They are 
 an eclectic bunch. For example:
