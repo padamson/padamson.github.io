@@ -124,3 +124,4 @@ SUCCESS
 [homebrew]:       http://brew.sh
 [blas]:           http://www.netlib.org/blas/
 [lapack]:         http://www.netlib.org/lapack/
+[lapacke]:        http://www.netlib.org/lapack/lapacke.html
