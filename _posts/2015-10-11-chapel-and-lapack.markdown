@@ -61,8 +61,11 @@ The Chapel LAPACK module actually uses [LAPACKE][lapacke], the C interface to LA
 to compile is actually `make lapackelib`. You can check the LAPACKE install by running the 
 example shipped with the code (by running `make lapacke_example`).
 
-Although the [Chapel install page][chapel-install] mentions [Homebrew][homebrew] as an option for 
-installing a single-locale (shared memory) build of Chapel, my Homebrew would install version 1.11.0, 
+~~Although t~~<span style="color:red">T</span>he [Chapel install page][chapel-install] 
+mentions [Homebrew][homebrew] as an option for 
+installing a single-locale (shared memory) build of Chapel<span style="color:red">.
+Since I am attempting it on the same day as the 1.12.0 release and there is some lag on the order of 24 hours
+for the Homebrew formulas to be updated</span>, my Homebrew would install version 1.11.0, 
 not the latest one with the LAPACK module.
 When installing Chapel from source, I've initially decided to use the default options in the
 Makefile using the Apple LLVM compiler that ships with Xcode command-line tools.
