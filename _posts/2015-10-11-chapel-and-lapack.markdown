@@ -4,14 +4,14 @@ title:  "Some notes on getting started with Chapel's new LAPACK module on a mac"
 date:   2015-10-11 11:24:00
 categories: chapel exotimo lapack
 ---
-# Abstract
+## Abstract
 The latest version of Chapel (version 1.12.0) includes a LAPACK module. 
 To get started, I compiled Chapel, BLAS, and LAPACK, and I ran the 
 example code shipped with Chapel. Here are some notes.[^1]
 
 [^1]: This is not meant to be step-by-step instructions. I don't outline every step in detail, and I assume the reader has previously compiled and used Chapel on his system and already has things like Homebrew and the Xcode command-line tools.
 
-# Software versions referenced:
+## Software versions referenced:
 - [Chapel][chapel] version 1.12.0
 - [BLAS][blas] version 3.5.0
 - [LAPACK][lapack] version 3.5.0
@@ -19,7 +19,7 @@ example code shipped with Chapel. Here are some notes.[^1]
 - Xcode version 7.0
 - Apple LLVM version 7.0.0
 
-# Motivation
+## Motivation
 I've started the [ExotiMO][exotimo] project to write a quantum chemistry code that
 meets some fairly unique requirements:
 
@@ -35,7 +35,7 @@ released version 1.12.0 with
 [some exciting additions][chapel-changes], including a LAPACK module, I was anxious to
 try it out.
 
-# Getting BLAS, LAPACK, and Chapel
+## Getting BLAS, LAPACK, and Chapel
 LAPACK will require `gfortran` and BLAS to compile, and BLAS will require `gfortran`. `gfortran` can be 
 gotten easily along with `gcc` using [Homebrew][homebrew], and they will install to 
 `/usr/local/Cellar/gcc/5.2.0/bin` (as of this writing) as `gcc-5` and `gfortran` with
@@ -70,7 +70,7 @@ not the latest one with the LAPACK module.
 When installing Chapel from source, I've initially decided to use the default options in the
 Makefile using the Apple LLVM compiler that ships with Xcode command-line tools.
 
-# Running the example
+## Running the example
 Chapel ships with an example program (located at `examples/primers/LAPACKlib.chpl`)
 that uses the LAPACK `gesv` procedure to solve
 $$ A \times X = B $$ for $$ X $$ given both $$ A $$ and $$ B $$, where $$ A $$ is a square matrix.
