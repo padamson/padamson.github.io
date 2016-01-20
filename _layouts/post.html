@@ -12,6 +12,8 @@ layout: default
     {{ content }}
   </article>
 
+  {% include twitter.html %}
+
   {% if page.comments %}
     {% include disqus.html %}
   {% endif %}
