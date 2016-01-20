@@ -2,6 +2,7 @@
 layout: post
 title:  "Some notes on getting started with Chapel's new LAPACK module on a mac"
 date:   2015-10-11 11:24:00
+comments: true
 categories: chapel exotimo lapack
 ---
 ## Abstract
