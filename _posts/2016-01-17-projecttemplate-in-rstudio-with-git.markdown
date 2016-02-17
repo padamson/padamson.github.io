@@ -48,7 +48,8 @@ ProjectTemplate project directory.
 Select `New Project...` from the `File` menu in RStudio. In the `New Project` dialogue, select
 `Existing Directory`: 
 
-![Screenshot of RStudio Create Project dialogue](/assets/rstudio_project_from_existing_directory_screenshot.jpg)
+![Screenshot of RStudio Create Project dialogue](
+{{ "/assets/rstudio_project_from_existing_directory_screenshot.jpg" | prepend: site.baseurl | prepend: site.url }})
 
 Browse to the newly created directory (`letters` in the example) and click `Create Project`.
 A new sesson of RStudio will open and the new project will be loaded. (Note that the Git pane 

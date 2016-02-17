@@ -10,13 +10,9 @@
     {% for post in site.categories.R limit:20 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
-      {% if post.excerpt %}
-      <description>{{ post.excerpt | xml_escape }}</description>
-      {% else %}
       <description>{{ post.content | xml_escape }}</description>
-      {% endif %}
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <link>{{ site.url }}{{ post.url }}</link>
+      <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
       <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
     </item>
     {% endfor %}
