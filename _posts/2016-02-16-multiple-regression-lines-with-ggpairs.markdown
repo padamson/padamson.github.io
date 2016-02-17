@@ -3,7 +3,11 @@ layout: post
 title:  "Multiple regression lines in ggpairs" 
 date:   2016-02-16 23:00:00
 comments: true
-categories: R GGally ggplot2 ggpairs
+categories: 
+- R
+- GGally
+- ggplot2
+- ggpairs
 tags:
 - R
 - GGally
