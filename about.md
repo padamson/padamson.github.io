@@ -3,10 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
-# Explore computational chemistry, software engineering, and data science
+# Exploring the intersection of engineering and data analytics
 
-On these pages, I will provide background on my GitHub repositories. They are 
-an eclectic bunch. For example:
+On these pages, I will provide background on my GitHub repositories and things
+I've learned along the way. For example:
 
 - **[ExotiMO](https://github.com/padamson/exotimo)**: simple code written in [Chapel](http://chapel.cray.com) to model 
 chemical systems containing exotic particles (e.g. positrons) using 

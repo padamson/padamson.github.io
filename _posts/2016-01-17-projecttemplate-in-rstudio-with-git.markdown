@@ -4,6 +4,11 @@ title:  "Data analysis with ProjectTemplate in RStudio with Git"
 date:   2016-01-17 23:40:00
 comments: true
 categories: R RStudio ProjectTemplate Git
+tags:
+- R
+- RStudio
+- ProjectTemplate
+- Git
 ---
 ## Abstract
 

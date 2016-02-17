@@ -4,6 +4,9 @@ title:  "Some notes on getting started with Chapel's new LAPACK module on a mac"
 date:   2015-10-11 11:24:00
 comments: true
 categories: chapel exotimo lapack
+tags:
+- chapel
+- exotimo
 ---
 ## Abstract
 The latest version of Chapel (version 1.12.0) includes a LAPACK module. 
