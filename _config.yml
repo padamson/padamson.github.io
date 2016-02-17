@@ -13,3 +13,6 @@ highlighter: pygments # required to highlight chapel
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-gist
