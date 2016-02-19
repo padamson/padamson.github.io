@@ -10,11 +10,12 @@ categories:
 tags:
 - chapel
 - exotimo
+abstract: The latest version of Chapel (version 1.12.0) includes a LAPACK module. 
+  To get started, I compiled Chapel, BLAS, and LAPACK, and I ran the example code 
+  shipped with Chapel. 
 ---
 ## Abstract
-The latest version of Chapel (version 1.12.0) includes a LAPACK module. 
-To get started, I compiled Chapel, BLAS, and LAPACK, and I ran the 
-example code shipped with Chapel. Here are some notes.[^1]
+{{ page.abstract }}[^1]
 
 [^1]: This is not meant to be step-by-step instructions. I don't outline every step in detail, and I assume the reader has previously compiled and used Chapel on his system and already has things like Homebrew and the Xcode command-line tools.
 
