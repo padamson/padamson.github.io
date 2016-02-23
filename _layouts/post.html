@@ -7,24 +7,20 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     {% include post-tags.html %}
+
+    {% include twitter.html %}
+
   </header>
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- post -->
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2084527300136912"
-    data-ad-slot="9067761588"
-    data-ad-format="auto"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
+  {% include google-post-ad.html %}
 
   <article class="post-content">
     {{ content }}
   </article>
 
   {% include twitter.html %}
+
+  {% include amazon-post-ad.html %}
 
   {% if page.comments %}
     {% include disqus.html %}
