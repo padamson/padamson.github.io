@@ -13,3 +13,4 @@ permalink: /links/
 server](http://deanattali.com/2015/05/09/setup-rstudio-shiny-server-digital-ocean/) 
 + [Feedburner](http://feedburner.google.com)
 + [Machine Learning Mastery](http://machinelearningmastery.com/blog/)
++ [View Markdown files in OS X quicklook](https://github.com/toland/qlmarkdown/)
