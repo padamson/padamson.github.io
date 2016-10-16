@@ -76,4 +76,4 @@ and submit a pull request if you wish to contribute.
 
 [caret]:        http://topepo.github.io/caret/
 [apm]:          https://cran.r-project.org/web/packages/AppliedPredictiveModeling/index.html
-[rwml-R]:       https://github.com/padamson/rwml-R
+[rwml-R]:       https://padamson.github.io/rwml-R/
