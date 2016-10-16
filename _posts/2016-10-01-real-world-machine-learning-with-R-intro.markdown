@@ -26,9 +26,6 @@ abstract: Introduces my Github repo providing R code to accompany
 
 ## Introducing [rwml-R](https://github.com/padamson/rwml-R)
 
-<iframe style="float:right;width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=padamson-20&marketplace=amazon&region=US&placement=1617291927&asins=1617291927&linkId=78f0298f80efe8489afed4efbe50aad3&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066C0&bg_color=FFFFFF">
-    </iframe>
-
 The book "Real-World Machine Learning" attempts to prepare the reader for the 
 realities of machine learning. It covers a basic framework for
 machine-learning projects, then it dives into extended examples that show how 

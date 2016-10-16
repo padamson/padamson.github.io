@@ -4,6 +4,8 @@ title: Reminders
 permalink: /reminders/
 ---
 
+# [The Perfect Workflow, with Git, GitHub, and SSH](https://code.tutsplus.com/tutorials/the-perfect-workflow-with-git-github-and-ssh--net-19564)
+
 {% include links-ad.html %}
 
 # Dreaded `RVM is not a function...` 
