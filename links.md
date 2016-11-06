@@ -6,6 +6,7 @@ permalink: /links/
 
 {% include links-ad.html %}
 
++ [`mlr` framework for machine learning experiments in R](http://mlr-org.github.io/mlr-tutorial/release/html/index.html)
 + [r-bloggers.com](http://www.r-bloggers.com)
 + [datascienceriot.com](http://www.datascienceriot.com)
 + [Using Git to manage a web site](http://toroid.org/git-website-howto)
