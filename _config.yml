@@ -15,6 +15,5 @@ highlighter: rouge # required to highlight chapel
 markdown: kramdown
 
 gems:
-  - jekyll-gist
 
 quick_view_length: 200
