@@ -38,7 +38,7 @@ the [vis.js](http://visjs.org/) `Timeline` module and the
 timeline and watch the acronym list adjust automatically.
 
 ![stratvis Shiny app screenshot](
-{{ "/assets/stratvis.png" | prepend: site.baseurl | prepend: site.url }}) 
+{{ "/assets/stratvis-small.png" | prepend: site.baseurl | prepend: site.url }})
 
 ## Relevant background on the *timevis* API
 
