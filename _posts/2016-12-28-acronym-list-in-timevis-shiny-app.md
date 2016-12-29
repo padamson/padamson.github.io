@@ -37,8 +37,10 @@ the [vis.js](http://visjs.org/) `Timeline` module and the
 [my Shiny server][shiny-server], so you can scroll through the interactive
 timeline and watch the acronym list adjust automatically.
 
+[
 ![stratvis Shiny app screenshot](
 {{ "/assets/stratvis-small.png" | prepend: site.baseurl | prepend: site.url }})
+][stratvis-demo]
 
 ## Relevant background on the *timevis* API
 
