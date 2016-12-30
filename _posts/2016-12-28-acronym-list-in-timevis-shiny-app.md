@@ -2,6 +2,7 @@
 layout: post
 title:  "Reactive acronym list in stratvis, a timevis-based Shiny app"
 date:   2016-12-29 11:40:00
+updated: 2016-12-30 09:00:00
 comments: true
 categories: 
 - R
@@ -61,6 +62,7 @@ is in the `stratvis` demo), then the following input variables are available:
 
 ## Reactively update acronym list
 
+
 The block of code in `server.R` that generates the reactively updated acronym list:
 
 {% highlight R %}
@@ -68,12 +70,18 @@ output$acronyms <- DT::renderDataTable({
     firstDate <- input$timelineGroups_window[1]
     lastDate <- input$timelineGroups_window[2] 
     data <- input$timelineGroups_data %>%
-      select(label,start,end) %>%
-      filter((is.na(end) & (start > firstDate & start < lastDate)) | 
-        (!is.na(end) & (start < lastDate & end > firstDate)))
+      select(content,type,start,end) %>%
+      filter(((type == 'point' | type == 'box') & 
+              (start > firstDate & start < lastDate)) | 
+             ((type == 'range' | type == 'background') & 
+              (start < lastDate & end > firstDate)))
     acronyms %>% 
       filter(grepl(
-        paste(unlist(str_split(data$label,pattern=" ")),collapse="|"), 
+        paste0("\\<",
+               paste(
+                 unlist(
+                   str_split(data$content,pattern=" ")),collapse="\\>|\\<"),
+               "\\>"), 
         acronym)) %>%
       select(acronym, full)
   },
@@ -101,14 +109,16 @@ firstDate <- input$timelineGroups_window[1]
 lastDate <- input$timelineGroups_window[2] 
 {% endhighlight %}
 
-The `label`, `start`, and `end` variables within the `timelineGroups_data` Shiny
+The `content`, `type`, `start`, and `end` variables within the `timelineGroups_data` Shiny
 input are selected and then filtered for only those items visible in the timeline:
 
 {% highlight R %}
 data <- input$timelineGroups_data %>%
-  select(label,start,end) %>%
-  filter((is.na(end) & (start > firstDate & start < lastDate)) | 
-         (!is.na(end) & (start < lastDate & end > firstDate)))
+  select(content,type,start,end) %>%
+  filter(((type == 'point' | type == 'box') & 
+          (start > firstDate & start < lastDate)) | 
+         ((type == 'range' | type == 'background') & 
+          (start < lastDate & end > firstDate)))
 {% endhighlight %}
 
 The call to `filter` accomodates 'point' and 'box' type objects (`type = 'point'` or
@@ -126,10 +136,19 @@ all of the words (separated by white space) in `data$label` pasted together with
 {% highlight R %}
 acronyms %>% 
   filter(grepl(
-    paste(unlist(str_split(data$label,pattern=" ")),collapse="|"), 
+    paste0("\\<",
+           paste(
+             unlist(
+               str_split(data$content,pattern=" ")),collapse="\\>|\\<"),
+           "\\>"), 
     acronym)) %>%
   select(acronym, full)
 {% endhighlight %}
+
+*Note: my original code had an error in the `grepl` regular expression. It did not
+include the `\\<` and `\\>` tags, resulting in matches when any part of an acronym
+was present in the timeline. Thanks to [Dean Atalli](http://deanattali.com) 
+for pointing this out.*
 
 ## Feedback welcome 
 
