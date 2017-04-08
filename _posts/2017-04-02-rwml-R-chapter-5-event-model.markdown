@@ -82,6 +82,9 @@ below. An AUC of 0.86 is achieved with the initial set of six features.
 ![Cross-validated ROC curve and AUC metric](
 {{ "/assets/figure5.3-1.png" | prepend: site.baseurl | prepend: site.url }})
 
+<a href="/share" class="twitshot-tweet-button" target="_blank" data-url="https://padamson.github.io/r/ggplot2/dplyr/caret/randomforest/fread/roc/auc/importance/crossvalidation/featureengineering/2017/04/08/rwml-R-chapter-5-event-model.html" data-text="R code to accompany Real-World Machine Learning (Chapter 5): Event Modeling" data-image="http://padamson.github.io/assets/figure5.3-1.png" data-count="true">Twitshot</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://ssl.twitshot.com/share-button.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitshot-bjs');</script>
+
 ## Inclusion of date-time and bag-of-words features lead to over-fitting 
 
 Ten date-time features (such as ''week of the year'' and ''day of the week'')
