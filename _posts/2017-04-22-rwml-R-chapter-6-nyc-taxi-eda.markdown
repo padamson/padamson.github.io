@@ -76,7 +76,7 @@ longitude space which is shown below. With slightly less than 50,000 data
 points, we can clearly see the street layout of downtown Manhatten.
 Many of the trips originate in the other boroughs of New York, too.
 
-![The latitude/longitude of pickup locations. Note that the x-axis is flipped, compared to a regular map.
+![The latitude/longitude of pickup locations. Note that the x-axis is flipped, compared to a regular map.](
 {{ "/assets/figure6.4-1.png" | prepend: site.baseurl | prepend: site.url }}) 
 
 ## Feedback welcome 
