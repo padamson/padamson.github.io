@@ -28,7 +28,7 @@ abstract: The rwml-R Github repo is updated with R code for exploratory data
 
 {{ page.abstract }}
 
-### Data for NYC taxi example
+## Data for NYC taxi example
 
 The data files for the examples in Chapter 6 of the book are available at 
 [http://www.andresmh.com/nyctaxitrips/](http://www.andresmh.com/nyctaxitrips/).
@@ -67,13 +67,13 @@ dataJoined <- inner_join(tripData, fareData)
 remove(fareData, tripData)
 {% endhighlight %}
 
-### Exploring the data
+## Exploring the data
 
-In [the complete code-through](chap6), plots of categorical and numerical 
+In [the complete code-through][chap6], plots of categorical and numerical 
 features of the data are made using
 `ggplot2`, including a visualization of the pickup locations in latitude and
-longitude space. With slightly less than 50,000 data points, we can clearly 
-see the street layout of downtown Manhatten.
+longitude space which is shown below. With slightly less than 50,000 data 
+points, we can clearly see the street layout of downtown Manhatten.
 Many of the trips originate in the other boroughs of New York, too.
 
 ![The latitude/longitude of pickup locations. Note that the x-axis is flipped, compared to a regular map.
