@@ -36,7 +36,7 @@ abstract: In the latest update to the rwml-R Github repo, R code is provided to
 
 ## Data import and EDA for NYC taxi example
 
-As mentioned in [my previous post](prevPost), 
+As mentioned in [my previous post][prevPost], 
 [the complete code-through for Chapter 6][chap6] includes
 examples of getting the data and performing exploratory data analysis (EDA).
 
@@ -63,6 +63,12 @@ p9
 ![The distribution of tip amounts when omitting cash payments](
 {{ "/assets/figure6.6-1.png" | prepend: site.baseurl | prepend: site.url }}) 
 
+## Model development and evaluation
+
+![The ROC curve and feature importance list for the random forest model, including all categorical features and additional date-time features](
+{{ "/assets/figure6.11b-1.png" | prepend: site.baseurl | prepend: site.url }}) 
+
+
 ## Feedback welcome 
 
 If you have any feedback on the [rwml-R][rwml-R-gh] project, please
@@ -80,4 +86,4 @@ the generated HTML files from `knitr`, including a page with
 [rwml-R]:       https://padamson.github.io/rwml-R/
 [rwml-R-fork]:  https://github.com/padamson/rwml-R/fork
 [chap6]:        https://padamson.github.io/rwml-R/Chapter6.html
-[prevPost]:     http://padamson.github.io/r/ggplot2/dplyr/fread/2017/04/22/rwml-R-chapter-6-nyc-taxi-eda.html
+[prevPost]:     https://padamson.github.io/r/ggplot2/dplyr/fread/2017/04/22/rwml-R-chapter-6-nyc-taxi-eda.html
