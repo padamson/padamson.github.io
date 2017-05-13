@@ -7,6 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://padamson.github.io" # the base hostname & protocol for your site
 twitter_username: pauleadamson
 github_username:  padamson
+facebook_username: dataprone
 
 timezone: America/New_York
 highlighter: rouge # required to highlight chapel

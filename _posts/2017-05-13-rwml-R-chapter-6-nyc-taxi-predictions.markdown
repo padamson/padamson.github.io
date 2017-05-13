@@ -1,7 +1,7 @@
 --- 
 layout: post
 title:  "R code to accompany Real-World Machine Learning (Chapter 6): Making Predictions" 
-date:   2017-05-07 23:00:00
+date:   2017-05-13 09:20:00
 comments: true
 categories: 
 - R
@@ -65,9 +65,25 @@ p9
 
 ## Model development and evaluation
 
+After we have explored the data and identified the specific prediction
+that we would like to make (Will non-cash rides result in a tip?), we 
+move onto model development. The effectiveness of the machine learning models
+are evaluated by plotting the ROC curves and computing the Area Under the
+Curve (AUC) using code developed for [Chapter 4][chap4] (with slight 
+modifications for our purposes here).
+
+For each model, we follow our typical `caret` workflow of splitting the data 
+into training and test data sets with `createDataPartition`, setting up 
+control parameters with the `trainControl` function, training the model with 
+`train`, and making predictions with `predict`. The variable importance is
+calculated with the `varImp` function of `caret`. We start with a simple
+logistic regression model with the numerical data only. We then systematically
+improve prediction results by moving to a random forest model, adding
+categorical variables, and engineering date-time features. The final
+ROC curve and table of variable importances are shown below.
+
 ![The ROC curve and feature importance list for the random forest model, including all categorical features and additional date-time features](
 {{ "/assets/figure6.11b-1.png" | prepend: site.baseurl | prepend: site.url }}) 
-
 
 ## Feedback welcome 
 
@@ -77,7 +93,7 @@ As with any of my projects, feel free to [fork the rwml-R repo][rwml-R-fork]
 and submit a pull request if you wish to contribute.
 For convenience, I've created a [project page for rwml-R][rwml-R] with 
 the generated HTML files from `knitr`, including a page with 
-[all of the event-modeling examples from chapter 6][chap6].
+[all of the examples from chapter 6][chap6].
 
 <a class="github-button" href="https://github.com/padamson/rwml-R/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download padamson/rwml-R on GitHub">Download</a>
 <a class="github-button" href="https://github.com/padamson/rwml-R/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/padamson/rwml-R/network" data-count-api="/repos/padamson/rwml-R#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork padamson/rwml-R on GitHub">Fork</a>
@@ -85,5 +101,6 @@ the generated HTML files from `knitr`, including a page with
 [rwml-R-gh]:    https://github.com/padamson/rwml-R
 [rwml-R]:       https://padamson.github.io/rwml-R/
 [rwml-R-fork]:  https://github.com/padamson/rwml-R/fork
+[chap4]:        https://padamson.github.io/rwml-R/Chapter4.html
 [chap6]:        https://padamson.github.io/rwml-R/Chapter6.html
 [prevPost]:     https://padamson.github.io/r/ggplot2/dplyr/fread/2017/04/22/rwml-R-chapter-6-nyc-taxi-eda.html
