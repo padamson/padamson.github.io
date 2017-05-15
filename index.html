@@ -4,21 +4,14 @@ layout: default
 
 <div class="home">
 
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <!-- blog feed -->
-  <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-2084527300136912"
-    data-ad-slot="2252831989"
-    data-ad-format="auto"></ins>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
   <ul class="post-list">
     {% for post in site.posts %}
     <li>
       <!-- span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span -->
+
+      <h3>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h3>
 
       <span class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
@@ -27,9 +20,7 @@ layout: default
         {% endif %}
       </span>
 
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+
       {% if post.abstract %}
       <p class="small light-font">
         {{ post.abstract | truncate: site.quick_view_length, '...' }}

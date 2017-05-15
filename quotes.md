@@ -12,8 +12,6 @@ Be satisfied with your opinions and
 content with your knowledge."
 -- Elbert Hubbard, Businessman and writer. Author of the essay, **Message to Garcia**.
 
-{% include quotes-ad.html %}
-
 “Very few beings really seek knowledge in this world. Mortal or immortal, few 
 really ask. On the contrary, they try to wring from the unknown the answers 
 they have already shaped in their own minds -- justifications, confirmations, 
@@ -21,4 +19,4 @@ forms of consolation without which they can't go on. To really ask is to open
 the door to the whirlwind. The answer may annihilate the question and the 
 questioner.” ―- Anne Rice, **The Vampire Lestat**
 
-
+{% include quotes-ad.html %}
