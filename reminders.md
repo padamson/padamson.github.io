@@ -4,6 +4,8 @@ title: Reminders
 permalink: /reminders/
 ---
 
+# [Making use of external R code in knitr and R markdown](http://zevross.com/blog/2014/07/09/making-use-of-external-r-code-in-knitr-and-r-markdown/)
+
 # [The Perfect Workflow, with Git, GitHub, and SSH](https://code.tutsplus.com/tutorials/the-perfect-workflow-with-git-github-and-ssh--net-19564)
 
 {% include links-ad.html %}
