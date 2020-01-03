@@ -3,7 +3,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem 'jekyll', '3.1.6'
+gem 'jekyll', '3.6.3'
 
 group :jekyll_plugins do
   gem 'jekyll-gist'
