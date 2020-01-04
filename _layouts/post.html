@@ -21,7 +21,9 @@ layout: default
     {% include post-tags.html %}
 
     {% include twitter.html %}
-    {% include linkedin.html %}
+    {% comment %}
+    	{% include linkedin.html %}
+    {% endcomment %}
 
     </header>
 
@@ -33,8 +35,10 @@ layout: default
     {{ content }}
     </article>
 
-    {% include twitter.html %}
-    {% include linkedin.html %}
+    {% comment %}
+        {% include twitter.html %}
+    	{% include linkedin.html %}
+    {% endcomment %}
 
     {% if page.comments %}
     {% include disqus.html %}
