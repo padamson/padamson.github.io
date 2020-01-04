@@ -19,4 +19,6 @@ forms of consolation without which they can't go on. To really ask is to open
 the door to the whirlwind. The answer may annihilate the question and the 
 questioner.” ―- Anne Rice, **The Vampire Lestat**
 
-{% include quotes-ad.html %}
+{% comment %}
+	{% include quotes-ad.html %}
+{% endcomment %}
