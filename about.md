@@ -3,9 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-{% comment %} 
-	# Exploring the intersection of engineering and data analytics
-{% endcomment %}
 
 On these pages, I will provide background on my GitHub repositories and things
 I've learned along the way. For example:
